@@ -4,8 +4,7 @@
 // Created 2023/19/07
 
 
-// file Path
-$filename = "1.mobileprovision";
+
 
 // Convert File MobileProvision To Array
 function ConvertFileMobileProvisionToArray($fileName){
@@ -28,20 +27,6 @@ $array[] = array("$value"=> $Array[$value+1]);
 }
 return $array;
 } 
-
-// call function's
-$array = ConvertFileMobileProvisionToArray($filename);
-// <key>TeamName</key>
-// <string>Azozz ALFiras</string>
-// Will get string : Azozz ALFiras
-$readfile = ReadValueFromArray($array,"TeamName"); 
-
-
-print_r($readfile); // will show array u can use $readfile[0]; 
-
-// or foreach($readfile as $item){
-// echo $item[0];
-// }
 
 
 
