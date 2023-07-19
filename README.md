@@ -4,7 +4,7 @@ Read File .mobileprovision in PHP
 
 # First Import file Functions.php
 ```PHP
-include ("Functions.php);
+include ("Functions.php");
 ```
 
 # Second Call Function's
@@ -14,6 +14,7 @@ $filename = "1.mobileprovision";
 
 // call function's
 $array = ConvertFileMobileProvisionToArray($filename);
+
 // <key>TeamName</key>
 // <string>Azozz ALFiras</string>
 // Will get string : Azozz ALFiras
